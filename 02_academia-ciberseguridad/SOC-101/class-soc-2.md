@@ -79,27 +79,3 @@ Estas brechas pueden permitir **acceso no autorizado**, **escalamiento de privil
 
 Los **dispositivos IoT** (Internet of Things) representan un desafío creciente, ya que muchos carecen de mecanismos de seguridad robustos.  
 Esto los convierte en objetivos atractivos para los atacantes y puntos débiles dentro de una red.
-
----
-
-📘 **Conclusión:**  
-Comprender las distintas amenazas y vulnerabilidades es esencial para diseñar estrategias de **ciberseguridad efectivas** que protejan la información, los sistemas y las personas.
-
-
-
-
-Ataques 
-
-WannaCry: o  wannaCrypt0r 2.0 es un sistema dañiño de categoria rasonware tipo cryptoworm, cifrando archivos, utilizando EternalBlue.
-
-Botnets: es uan rede de equipos infectados llamados bot o zombies que se peuden controlar de forma remota por un atacante.
-
-
-
-Otros
-
-1. Russian Market: es un foro criminal dondne compran y venden datos ilicitos, robados etc 
-2. the-malware-repo: es un repo de github con diferentes tipos de malwares
-
-
-SOCRadar: es sun sistema que nos da un mapeo de tipo de amenazas pro categoria y clasificacioens dando muchos datos como estadisticas o tipos.
