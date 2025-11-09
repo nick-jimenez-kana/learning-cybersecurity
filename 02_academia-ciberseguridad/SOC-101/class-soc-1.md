@@ -1,4 +1,4 @@
-# 🧠 SOC 101 OPERACIONES DE SEGURIDAD - MODULO 1
+# SOC 101 OPERACIONES DE SEGURIDAD - MODULO 1
 
 ## Fundamentos de Redes y Seguridad Informática  
 

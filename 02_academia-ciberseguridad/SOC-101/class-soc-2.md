@@ -1,4 +1,4 @@
-# 🧩 Módulo 2: Fundamentos de Amenazas Cibernéticas
+# Módulo 2: Fundamentos de Amenazas Cibernéticas
 
 Las **amenazas cibernéticas** representan riesgos para los tres pilares de la seguridad de la información:  
 **Confidencialidad, Integridad y Disponibilidad (CIA).**
