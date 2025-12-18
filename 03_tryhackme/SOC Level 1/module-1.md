@@ -1,77 +1,96 @@
 # Introducción al Blue Team: Analista de Seguridad Junior
 
-Este repositorio contiene apuntes fundamentales sobre las operaciones de un **Security Operations Center (SOC)** y los conceptos básicos de defensa cibernética.
+Este repositorio reúne los conceptos esenciales para comprender cómo opera un **Security Operations Center (SOC)** y cuál es el rol del **Blue Team** en la defensa cibernética. El enfoque está pensado para perfiles junior que inician su camino en análisis de seguridad, monitoreo y respuesta a incidentes.
+
+---
 
 ## 🛡️ ¿Qué es un SOC?
-El **Security Operations Center (SOC)** es el centro neurálgico de la seguridad de una organización. Su función principal es **detectar, mitigar, responder e investigar** incidentes de seguridad.
 
-Su objetivo principal es garantizar la tríada **CIA**:
-* **Confidencialidad:** Proteger los datos contra el acceso no autorizado.
-* **Integridad:** Mantener los datos libres de modificaciones no autorizadas.
-* **Disponibilidad:** Asegurar que los sistemas estén accesibles cuando se necesiten.
+El **Security Operations Center (SOC)** es el área responsable de **monitorear, detectar, analizar, responder y contener** incidentes de seguridad dentro de una organización. Funciona como el sistema nervioso de la defensa digital: recibe señales (eventos), las interpreta (alertas) y coordina acciones.
 
----
+El objetivo del SOC es proteger la **tríada CIA**:
 
-## 🏛️ Jerarquías y Roles en Ciberseguridad
-
-### Niveles Ejecutivos y Estratégicos
-* **CEO / CFO / Owner:** Ejecutivos enfocados en el negocio global y la toma de decisiones financieras.
-* **CISO / CTO / CIO:** Lideran el programa de TI y la estrategia de seguridad de toda la empresa.
-* **SOC Manager / Red Team Lead:** Gestionan departamentos específicos o equipos tácticos.
-
-### Roles Operativos y Técnicos
-* **SOC Analyst / SOC Engineer:** Realizan tareas técnicas de análisis de registros (logs) y eventos.
-* **GRC Specialist:** Especialistas en Gobierno, Riesgo y Cumplimiento.
-* **Pentester:** Realizan pruebas de penetración para encontrar vulnerabilidades.
+* **Confidencialidad:** Evitar accesos no autorizados a la información.
+* **Integridad:** Garantizar que los datos no sean alterados sin autorización.
+* **Disponibilidad:** Asegurar que los sistemas y servicios estén operativos cuando se requieren.
 
 ---
 
-## 📊 Estructura Interna del SOC
+## 🏛️ Jerarquía y Roles en Ciberseguridad
 
+La ciberseguridad se organiza en distintos niveles, desde la estrategia del negocio hasta la operación técnica diaria.
 
+### Nivel Ejecutivo y Estratégico
 
-1.  **SOC Manager:** Gestiona el departamento y la estrategia del equipo.
-2.  **SOC Engineer:** Responsable de configurar y mantener las herramientas críticas como el **SIEM** (Gestión de Eventos e Información de Seguridad) y el **EDR**.
-3.  **SOC L2 (Analista Avanzado):** Supervisa al L1 y realiza investigaciones profundas de amenazas complejas.
-4.  **SOC L1 (Analista Junior):** Miembros de primera línea que clasifican, filtran y escalan las alertas detectadas.
+* **CEO / CFO / Owner:** Responsables del negocio y del impacto financiero del riesgo.
+* **CISO (Chief Information Security Officer):** Define la estrategia de seguridad y gestiona el riesgo cibernético.
+* **CTO / CIO:** Lideran la arquitectura tecnológica y la operación de TI.
+* **SOC Manager / Security Manager:** Dirige el SOC, define procesos y coordina al equipo.
 
-### Otros Equipos de Respuesta
-* **CIRT / CERT / CSIRT:** Equipos especializados en la respuesta ante incidentes críticos.
-* **Analista Forense:** Investiga las causas y rastros tras un ataque.
-* **Threat Intelligence Analyst:** Investiga amenazas emergentes y actores de amenazas.
-* **AppSec Analyst:** Se enfoca en la seguridad de las aplicaciones.
+### Nivel Operativo y Técnico
 
-> **Nota:** Existen empresas con su propio SOC interno, mientras que otras contratan un **MSSP** (Managed Security Service Provider) para externalizar estos servicios.
+* **SOC Analyst (L1 / L2 / L3):** Analistas encargados del monitoreo, análisis e investigación de alertas.
+* **SOC Engineer:** Diseña, configura y mantiene las herramientas de seguridad (SIEM, EDR, SOAR).
+* **GRC Specialist:** Gestiona Gobierno, Riesgo y Cumplimiento normativo.
+* **Pentester / Red Team:** Simula ataques para identificar vulnerabilidades antes que un adversario real.
+
+---
+
+## 📊 Estructura Interna de un SOC
+
+Un SOC suele organizarse por niveles de madurez y especialización:
+
+1. **SOC Manager:** Responsable de la gestión del equipo, métricas, procesos y mejora continua.
+2. **SOC Engineer:** Administra y optimiza las plataformas de seguridad como **SIEM**, **EDR** y herramientas de automatización.
+3. **SOC L2 (Analista Intermedio/Avanzado):** Realiza investigaciones profundas, correlación de eventos y análisis de incidentes complejos.
+4. **SOC L1 (Analista Junior):** Primer punto de contacto. Clasifica alertas, valida falsos positivos y escala incidentes reales.
+
+### Equipos de Apoyo y Respuesta
+
+* **CIRT / CERT / CSIRT:** Equipos especializados en respuesta a incidentes graves.
+* **Analista Forense:** Analiza evidencias digitales y reconstruye el ataque.
+* **Threat Intelligence Analyst:** Estudia amenazas emergentes, campañas y actores maliciosos.
+* **AppSec Analyst:** Se enfoca en la seguridad de aplicaciones y código.
+
+> **Nota:** Algunas organizaciones cuentan con un SOC interno, mientras que otras delegan estas funciones a un **MSSP (Managed Security Service Provider)**.
 
 ---
 
 ## 🚀 Vectores de Ataque
 
 ### El factor humano
-Se considera el "eslabón más débil" de la cadena de seguridad.
 
-### Técnicas Comunes
-* **Ingeniería Social:** Manipulación psicológica para engañar a las personas y obtener credenciales o acceso.
-* **Envenenamiento de SEO (SEO Poisoning):** Técnicas para posicionar sitios web maliciosos en los primeros resultados de búsqueda.
-* **Deepfake:** Uso de IA para generar audio o video falso con el fin de realizar estafas o suplantación de identidad.
-* **Ataque de Cadena de Suministro (Supply Chain Attack):** Infección a través de actualizaciones de software o bibliotecas de terceros comprometidas.
+El usuario suele ser el punto de entrada más común para un atacante, ya sea por desconocimiento, confianza excesiva o manipulación.
+
+### Técnicas de Ataque Frecuentes
+
+* **Ingeniería Social:** Manipulación psicológica para obtener credenciales o acceso.
+* **Phishing:** Correos o mensajes fraudulentos que buscan engañar al usuario.
+* **SEO Poisoning:** Posicionamiento de sitios maliciosos en buscadores.
+* **Deepfake:** Uso de IA para falsificar voz o video y cometer fraudes.
+* **Supply Chain Attack:** Compromiso de software, librerías o proveedores legítimos.
 
 ---
 
 ## 🛡️ Vectores de Defensa
 
-La defensa se basa en dos pilares: **Mitigar** (prevenir y reducir el impacto) y **Detectar** (identificar e investigar).
+La defensa moderna se apoya en dos principios clave: **prevenir** y **detectar** de forma temprana.
 
-### Herramientas y Estrategias
-* **Anti-Phishing:** Filtros que bloquean correos maliciosos antes de que lleguen al usuario.
-* **Antivirus Tradicional:** Basado en firmas para detectar malware conocido.
-* **EDR (Endpoint Detection and Response):** Herramienta avanzada que monitorea los dispositivos finales (laptops, servidores) en tiempo real. A diferencia del antivirus, utiliza análisis de comportamiento para detectar amenazas desconocidas y permite responder remotamente al ataque.
-* **Principio de "Zero Trust" y Concientización:** Capacitaciones constantes y simulacros de phishing para educar al personal.
+### Herramientas y Controles
+
+* **Anti-Phishing:** Filtrado de correos maliciosos antes de llegar al usuario.
+* **Antivirus Tradicional:** Detección basada en firmas de malware conocido.
+* **EDR (Endpoint Detection and Response):** Monitorea el comportamiento de endpoints en tiempo real, detecta amenazas desconocidas y permite contención remota.
+* **SIEM:** Centraliza logs, correlaciona eventos y genera alertas.
+* **Zero Trust:** Modelo que no confía por defecto en ningún usuario o dispositivo.
+* **Concientización en Seguridad:** Capacitaciones y simulacros de phishing para reducir el riesgo humano.
 
 ---
 
 ## 🔍 Vulnerabilidades y Exposiciones
 
-* **Zero Day (Día Zero):** Una vulnerabilidad que es descubierta por atacantes antes de que el fabricante tenga conocimiento de ella o haya creado un parche.
-* **CVE (Common Vulnerabilities and Exposures):** Es el identificador público y estándar asignado a una vulnerabilidad conocida.
-* **Patch (Parche):** La actualización de software que soluciona o "cura" una vulnerabilidad detectada.
+* **Zero-Day:** Vulnerabilidad explotada antes de existir un parche.
+* **CVE (Common Vulnerabilities and Exposures):** Identificador estándar de una vulnerabilidad conocida.
+* **Patch (Parche):** Actualización que corrige una vulnerabilidad.
+
+Comprender estos conceptos es fundamental para el trabajo diario de un analista SOC y para construir una defensa cibernética efectiva.
