@@ -25,11 +25,15 @@ Para una mejor comprensión de la jerarquía dentro de un SOC, aquí tienes un m
 
 ```mermaid
 graph TD
-    A[SOC Manager] --> B(Gestiona el departamento SOC)
-    B --> C{Roles Clave}
-    C --> D[SOC Engineer]
-    D --> E(Configura herramientas como SIEM/EDR)
-    C --> F[SOC L2]
-    F --> G(Supervisa al L1 e investiga amenazas avanzadas)
-    G --> H[SOC L1]
-    H --> I(Clasifica y escala amenazas)
+    A[Prioriza y elige una alerta] --> B[Asignamos 1 alerta a nosotros]
+    B --> C[Mover la alerta en "Progreso"]
+    C --> D[Leer la alerta, nombre y descripcion]
+    D --> E[Anotado IP, Host, Usuario]
+    E --> F{Esta configurado en el libro de alertas?}
+    F --> G[Seguimos paso del libro]
+    F --> H[Investigamos la alerta en SEIM]
+    H,G --> I[Tomamos una descioción]
+    I --> J {Se escala?}
+    J --> K [Se escala a L2]
+    J --> L [Agrega un comentario]
+    L --> M [Movemos a cerrado]
