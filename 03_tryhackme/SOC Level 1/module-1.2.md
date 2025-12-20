@@ -33,7 +33,7 @@ graph TD
     F --> G[Seguimos paso del libro]
     F --> H[Investigamos la alerta en SEIM]
     H,G --> I[Tomamos una descioción]
-    I --> J {Se escala?}
+    I --> J {Se escala}
     J --> K [Se escala a L2]
     J --> L [Agrega un comentario]
     L --> M [Movemos a cerrado]
