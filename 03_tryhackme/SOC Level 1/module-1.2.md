@@ -10,8 +10,8 @@ PLATAFORMAS DE GESTION
 
 Propiedades de un alerta
 
-| :--- | :--- |
 | Tiempo de alerta | Muestra el tiempo exacto que se creo la alerta |
+| :--- | :--- |
 | Nombre de alerta | Proporcion aun resumen basado a la alerta |
 | Gravedad de alerta | Define la urgencia de la alerta | 
 | Estado de alerta | Informa si alguien ya trabja con esta alerta | 
