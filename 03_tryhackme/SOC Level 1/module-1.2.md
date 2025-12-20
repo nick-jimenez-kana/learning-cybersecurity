@@ -1,25 +1,24 @@
-Plataformas de gestion
+PLATAFORMAS DE GESTION 
+
+| Herramienta | Tipo | Función Principal |
+| :--- | :--- | :--- |
+| **SIEM** | **Splunk** | Gestión de alertas para equipos SOC. |
+| **EDR**/**NDR** | **MS Defender**/**CrowdStrike** | Estos tienes sus propios dashboard de alertas. |
+| **SOAR** | **Splunk Soar**/**Cortex Soar** | Esto puede agregar y automatizar el SOC. |
+| **ITSM** | **Jira**/**TheHive** | Sistemas de ticket. |
 
 
-<tb>
-SIEM splunk gestiona alertas para equipos SOC
+Propiedades de un alerta
 
-EDR/NDR
-
-SOAR
-
-ITSM
-
-
-### 🛠️ Herramientas de Gestión en el SOC
-
-| Herramienta | Tipo | Función Principal | Uso en el SOC |
-| :--- | :--- | :--- | :--- |
-| **Splunk** | **SIEM** | Gestión de eventos e información de seguridad | Centraliza logs y gestiona alertas críticas para los analistas. |
-| **EDR** | **Endpoint** | Detección y respuesta en puntos finales | Monitorea el comportamiento de laptops y servidores en tiempo real. |
-| **SOAR** | **Automatización** | Orquestación y respuesta automática | Automatiza flujos de trabajo para acelerar la respuesta a incidentes. |
-
-
+| :--- | :--- |
+| Tiempo de alerta | Muestra el tiempo exacto que se creo la alerta |
+| Nombre de alerta | Proporcion aun resumen basado a la alerta |
+| Gravedad de alerta | Define la urgencia de la alerta | 
+| Estado de alerta | Informa si alguien ya trabja con esta alerta | 
+| Variedad de alerta | Clasifica la alerta | 
+| Asignatorio de alerta | Analisis adignado en las alertas |
+| Decripcion de alerta | Explica de que trata la alerta |
+| Campos de alerta | Proporciona comentarios y valores del analisis | 
 
 
 Para una mejor comprensión de la jerarquía dentro de un SOC, aquí tienes un mapa mental visual:
