@@ -33,7 +33,34 @@ graph TD
     F --> G[Seguimos paso del libro]
     F --> H[Investigamos la alerta en SEIM]
     H --> I[Tomamos una descioción]
-    I --> J { Se escala }
+    I --> J { Se escala? }
     J --> K [Se escala a L2]
     J --> L [Agrega un comentario]
     L --> M [Movemos a cerrado]
+
+
+Informes de Alertas
+Nos piden mayor detalle de la amenza si es que es sera escalado.
+
+Eslacada de Alertas
+Si quieres una alerta de mayor investigacion el informa de laerta ayuda para que de contexto inicial
+
+Comunicacion
+Aveces se requiere hablar con otros areas 
+
+Guia de informes de Alertas
+Escribir nuenos informes nos ayuda a:
+ - dar contexto a l2 de la alerta
+ - Las alertas se quedan y en buen tener contexto 
+ - Mejora las habilidades de L1
+
+se puede utilizar la tecnica Five Ws (5W) tipo de informe de alertas
+
+Quien?  Quien es la persona que ejecuto o descargo
+Que?  Secuencias del evento (que paso?)
+Cuando?  cuando comenzo y culmino
+Donde?  IP, host, appsec, se involucro
+Por que?  Razonamiento final de L1
+
+Informes de alertas SOC L1
+
